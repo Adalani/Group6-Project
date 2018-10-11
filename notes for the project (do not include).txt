@@ -1,3 +1,41 @@
-Requirements:
+Requirements (in Week 5 lecture):
 
-The website must have a theme, all themes were due at the beginning of class week 5. (done)
+
+The website must have a theme, all themes were due at the beginning of class 
+week 5. (done)
+
+The website should have a minimum of 6 pages and each page should be
+accessible via links from every other page. (not done)
+
+Every HTML element covered in class should be used at least once in each of the
+6 pages except for tables, videos and forms. (not done)
+
+The website must include at least one functional form, one table, and
+one video. (not done)
+
+The website will be peer reviewed for design so make sure to style the best as
+best you can with CSS.
+
+The website should include at least one click listener by incorporating
+JavaScript. (not done)
+
+The final project must be hosted LIVE on the Internet and all source
+code must be in GitHub. (not done)
+--> We have to get an actual domain to host our website (look in GitHub**)
+
+Your grade will be adjusted based on what you personally commit to GitHub,
+if someone else commits your work for you, YOU WILL GET A 0 ON
+YOUR CONTRIBUTION.
+
+
+
+Each page should have one header and one footer. (not done) ????
+
+Each page should have at least one navigation menu. (not done)
+--> a navigation bar?
+
+Each page should have a minimum of 3 sections. (not done)
+--> what is considered to be a section?
+
+The styling of each page should show some consitency
+with other pages. (not done)
