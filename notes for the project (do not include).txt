@@ -1,6 +1,8 @@
 Requirements (in Week 5 lecture):
 
 
+
+
 The website must have a theme, all themes were due at the beginning of class 
 week 5. (done)
 
