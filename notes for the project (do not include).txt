@@ -41,3 +41,11 @@ Each page should have a minimum of 3 sections. (not done)
 
 The styling of each page should show some consitency
 with other pages. (not done)
+
+
+ Project breakdown
+• 25% Design
+• 50% Functionality
+• 10% Code Readability
+• 10% User Experience
+• 5% Presentation
