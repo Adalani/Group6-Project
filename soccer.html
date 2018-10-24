@@ -2,133 +2,23 @@
 
 <!--Joël-->
 
-<html lang="en">
+<html lang = "en">
 
     <head>
         <title>Soccer League</title>
-
-
+        <link rel = "stylesheet" type = "text/css" href = "StyleSheet.css">
     </head>
-
-    <style>
-            /* -----For the top nav-----*/
-        nav {
-                    /*
-                        This defines the background colour of the nav bar.
-                    */
-                background-color: #333;
-                    /*
-                        The overflow property specifies whether text
-                        will be visible if it exceeds the border in length.
-                    */
-                overflow: hidden;
-                
-                display : flex;
-
-                justify-content: space-evenly;
-            }
-
-        /* The links inside the navigation bar are styled. */
-        nav a
-        {
-                /*
-                    The float property defines the
-                    position of an object.
-                */
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-                /* Padding creates space around an object. */
-            padding: 14px 16px;
-            text-decoration: none;
-                /* This defines the size of the font. */
-            font-size: 17px;
-            
-        }
-
-            /* Upon hover, the links will change colours. */
-        nav a:hover
-        {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Add a color to the active/current link. */
-        nav a.active
-        {
-            background-color: #4CAF50;
-            color: white;
-        }
-        
-        /* -----For the BotNav.----- */
-        .NavigationBottom
-        {
-            background-color: #333;
-            position: fixed;
-            bottom: 0;
-        }
-        .NavigationBottom a
-        {
-                /*
-                    The float property defines the
-                    position of an object.
-                */
-            float: left;
-            color: #f2f2f2;
-            text-align: center;
-                /* Padding creates space around an object. */
-            padding: 14px 16px;
-            text-decoration: none;
-                /* This defines the size of the font. */
-            font-size: 17px;
-            
-        }
-
-            /* Upon hover, the links will change colours. */
-        .NavigationBottom a:hover
-        {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Add a color to the active/current link. */
-        .NavigationBottom a.active
-        {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        /*
-            This eliminates the space that there would be between the
-            nav bar and the top of the browser.
-        */
-        /*body{
-                margin : 0px;
-            }*/
-        </style>
-    </head>
-
-    <section id = "NavigationTop" style = "height : 45px;">
-        <nav style = "height: 45px;">
-
-            <a href = "index.html">Home</a>
-
-            <a href = "soccer.html">Soccer</a>
-
-            <a href = "basketball.html">Basketball</a>
-
-            <a href = "cricket.html">Cricket</a>
-
-            <a href = "hockey.html">Hockey</a>
-
-            <a href = "schedules.html">The Schedules</a>
-        </nav>
-        <hr>
-            
-    </section>
 
 
     <body>
+        <nav>
+            <a href = "index.html">Home</a>
+            <a href = "soccer.html">Soccer</a>
+            <a href = "basketball.html">Basketball</a>
+            <a href = "cricket.html">Cricket</a>
+            <a href = "hockey.html">Hockey</a>
+            <a href = "schedules.html">The Schedules</a>
+        </nav>
         <p>
             <!--Add a description of the sport (how it's played, etc.)
                 + give other details-->
@@ -138,9 +28,8 @@
             Once clicked, this allows the user to immediately go back
             to the top of the page
         -->
-        
-        <div class = "NavigationBottom" id = "BotNav">
-                <a href = "#top">Back to the top of the page</a>
+        <div class = "bot-nav">
+            <a href = "#top">Back to the top of the page</a>
         </div>
     </body>
 

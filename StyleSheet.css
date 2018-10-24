@@ -1,5 +1,17 @@
-nav.IndexTopNav
-{
+/* -----For the body.----- */
+/*
+	This eliminates the space that there would be between the
+	nav bar and the top of the browser.
+*/
+/*body{
+       margin : 0px;
+}*/
+
+html, body {
+	margin: 0px;
+}
+
+nav {
 		/*
 			This defines the background colour of the nav bar.
 		*/
@@ -15,8 +27,7 @@ nav.IndexTopNav
 }
 
 		/* The links inside the navigation bar are styled. */
-nav.IndexTopNav a
-{
+nav a {
 		/*
 			The float property defines the
 			position of an object.
@@ -32,92 +43,53 @@ nav.IndexTopNav a
 }
 
 	/* Upon hover, the links will change colours. */
-nav.IndexTopNav a:hover
-{
+nav a:hover {
 	background-color: #ddd;
 	color: black;
 }
 
 	/* Add a color to the active/current link. */
-nav.IndexTopNav a.active
-{
+nav a.active {
 	background-color: #4CAF50;
 	color: white;
 }
 
-
-/* -----For the body.----- */
-/*
-	This eliminates the space that there would be between the
-	nav bar and the top of the browser.
-*/
-/*body{
-       margin : 0px;
-}*/
-body.IndexBody
-{
-	height: 2000px;
+section {
+	padding: 25px;
 }
 
-section.IndexWhySports
-{
-	height: 500px;
-}
-
-div.IndexVideoHeader
-{
-	color: blue;
-	font-family: 'Calibri';
-	font-size: 27px;
-}
-
-div.IndexImage
-{
+.image {
 	position: relative;
 }
 
-div.IndexImage img
-{
+.image img {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-
-	float: bottom right;
-
 	width: 240px;
 	height: 155px;
 }
 
-h3.IndexFirstHead
-{
-	color: blue;
-	font-family: 'Calibri';
-	font-size: 27px;
-}
-
-div.IndexImage
-{
-	display: grid;
-	height: 100%;
-}
-
-.centerfit
-{
+.register {
 	max-width: 100%;
 	max-height: 100vh;
 	margin: auto;
 }
 
-
-h3.IndexSecondHead
-{
+/*
+	head-1 = Why Join a Sports League?
+	head-2 = They are Beneficial
+	head-3 = Our Goal
+	head-4 = Sports & Managers
+*/
+h3.head-1, h3.head-2, h3.head-3, h3.head-4 {
+	text-decoration: underline;
 	color: blue;
 	font-family: 'Calibri';
 	font-size: 27px;
 }
 
-p.IndexBenefits
-{
+p.benefits {
 	/*
 		These properties allow the text to fit in any
 		browser window.
@@ -140,15 +112,13 @@ p.IndexBenefits
 
 
 /* -----For the BotNav.----- */
-div.IndexBotNav
-{
+.bot-nav {
 	background-color: #333;
 	position: fixed;
 	bottom: 0;
 }
 
-div.IndexBotNav a
-{
+.bot-nav a {
 	/*
 		The float property defines the
 		position of an object.
@@ -164,15 +134,13 @@ div.IndexBotNav a
 }
 
 	/* Upon hover, the links will change colours. */
-div.IndexBotNav a:hover
-{
+.bot-nav a:hover {
   background-color: #ddd;
   color: black;
 }
 
 	/* Adds a colour to the active/current link. */
-div.IndexBotNav a.active
-{
+.bot-nav a.active {
 	background-color: #4CAF50;
 	color: white;
 }
