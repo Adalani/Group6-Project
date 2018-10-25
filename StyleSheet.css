@@ -9,6 +9,7 @@
 
 html, body {
 	margin: 0px;
+	background-color: lightblue;
 }
 
 nav {
@@ -55,7 +56,8 @@ nav a.active {
 }
 
 section {
-	padding: 25px;
+	padding-left: 25px;
+	padding-top: 10px;
 }
 
 .image {
@@ -66,8 +68,8 @@ section {
 	position: absolute;
 	top: 0px;
 	right: 0px;
-	width: 240px;
-	height: 155px;
+	max-width: 240px;
+	max-height: 155px;
 }
 
 .register {
@@ -84,12 +86,16 @@ section {
 */
 h3.head-1, h3.head-2, h3.head-3, h3.head-4 {
 	text-decoration: underline;
-	color: blue;
+	color: darkblue;
 	font-family: 'Calibri';
 	font-size: 27px;
 }
 
-p.benefits {
+.sports-video {
+	width: 800;
+}
+
+p.benefits, p.goal, p.organization {
 	/*
 		These properties allow the text to fit in any
 		browser window.
@@ -99,6 +105,8 @@ p.benefits {
 	right:	0;
 	top:		0;
 
+	color: blue;
+	font-family: 'Calibri';
 	/*
 		This property does not allow the text to span
 		more than (nAmmount)PX of the screen.
@@ -109,13 +117,35 @@ p.benefits {
 	max-width: 1000px;
 }
 
+.list-1 {
+	color: blue;
+	font-family: 'Calibri';
+}
 
+.sports-managers, .interest {
+	padding-left: 25px;
+}
+/* -----Table-1----- */
+.table-1 {
+	border-collapse: collapse;
+	color: blue;
+	font-family: 'Calibri';
+}
+
+.table-1 thead th {
+	border-bottom: 1px solid #000;
+}
+
+.left {
+	border-left-style: solid;
+}
 
 /* -----For the BotNav.----- */
 .bot-nav {
 	background-color: #333;
 	position: fixed;
 	bottom: 0;
+	right: 0;
 }
 
 .bot-nav a {
