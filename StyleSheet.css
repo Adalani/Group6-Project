@@ -95,7 +95,7 @@ h3.head-1, h3.head-2, h3.head-3, h3.head-4 {
 	width: 800;
 }
 
-p.benefits, p.goal, p.organization {
+p.benefits, p.goal, p.organization, p.p-interest {
 	/*
 		These properties allow the text to fit in any
 		browser window.
