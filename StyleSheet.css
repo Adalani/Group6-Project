@@ -10,6 +10,7 @@
 html, body {
 	margin: 0px;
 	background-color: #C4C4C4;
+	font-family: 'Calibri';
 }
 
 nav {
@@ -87,7 +88,6 @@ section {
 h3.head-1, h3.head-2, h3.head-3, h3.head-4 {
 	text-decoration: underline;
 	color: black;
-	font-family: 'Calibri';
 	font-size: 27px;
 }
 
@@ -107,7 +107,6 @@ p.benefits, p.goal, p.organization, p.p-interest {
 	top:		0;
 
 	color: black;
-	font-family: 'Calibri';
 	/*
 		This property does not allow the text to span
 		more than (nAmmount)PX of the screen.
@@ -120,7 +119,6 @@ p.benefits, p.goal, p.organization, p.p-interest {
 
 .list-1, .table-1 {
 	color: black;
-	font-family: 'Calibri';
 }
 
 .sports-managers, .interest {
