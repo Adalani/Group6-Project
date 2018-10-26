@@ -9,7 +9,7 @@
 
 html, body {
 	margin: 0px;
-	background-color: lightblue;
+	background-color: #C4C4C4;
 }
 
 nav {
@@ -66,9 +66,9 @@ section {
 
 .image img {
 	position: absolute;
-	top: 0px;
-	right: 0px;
-	max-width: 240px;
+	top: 				0px;
+	right: 			0px;
+	max-width: 	240px;
 	max-height: 155px;
 }
 
@@ -86,13 +86,14 @@ section {
 */
 h3.head-1, h3.head-2, h3.head-3, h3.head-4 {
 	text-decoration: underline;
-	color: darkblue;
+	color: black;
 	font-family: 'Calibri';
 	font-size: 27px;
 }
 
 .sports-video {
-	width: 800;
+	max-width: 800px;
+	height: auto;
 }
 
 p.benefits, p.goal, p.organization, p.p-interest {
@@ -105,7 +106,7 @@ p.benefits, p.goal, p.organization, p.p-interest {
 	right:	0;
 	top:		0;
 
-	color: blue;
+	color: black;
 	font-family: 'Calibri';
 	/*
 		This property does not allow the text to span
@@ -117,8 +118,8 @@ p.benefits, p.goal, p.organization, p.p-interest {
 	max-width: 1000px;
 }
 
-.list-1 {
-	color: blue;
+.list-1, .table-1 {
+	color: black;
 	font-family: 'Calibri';
 }
 
@@ -126,14 +127,13 @@ p.benefits, p.goal, p.organization, p.p-interest {
 	padding-left: 25px;
 }
 /* -----Table-1----- */
+
 .table-1 {
 	border-collapse: collapse;
-	color: blue;
-	font-family: 'Calibri';
 }
 
 .table-1 thead th {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid black;
 }
 
 .left {
