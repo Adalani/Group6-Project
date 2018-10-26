@@ -7,10 +7,15 @@
        margin : 0px;
 }*/
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*
+	--> Don't forget to add comments
+*/
 html, body {
 	margin: 0px;
 	background-color: #C4C4C4;
-	font-family: 'Calibri';
+	font-family: 'Montserrat', sans-serif;
 }
 
 nav {
