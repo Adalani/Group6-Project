@@ -10,14 +10,24 @@
     </head>
     
     <body>
-        <nav>
+        <nav id = "top" class = "navbar">
             <a href = "index.html">Home</a>
-            <a href = "soccer.html">Soccer</a>
-            <a href = "basketball.html">Basketball</a>
-            <a href = "cricket.html">Cricket</a>
-            <a href = "hockey.html">Hockey</a>
+            <div class = "dropdown">
+                <button class = "dropbtn">Sports
+                    <i class = "fa fa-caret-down"></i>
+                </button>
+                    <div class = "dropdown-content">
+                        <a href = "soccer.html" target = "_blank">Soccer</a>
+                        <a href = "basketball.html" target = "_blank">
+                            Basketball</a>
+                        <a href = "cricket.html" target = "_blank">Cricket</a>
+                        <a href = "hockey.html" target = "_blank">Hockey</a>
+                </div>
+            </div>
             <a href = "schedules.html" target = "_blank">The Schedules</a>
+            <a href = "form.html">Sign Up</a>
         </nav>
+                
         <p>
             <!--Add a description of the sport (how it's played, etc.)
                 + give other details-->
