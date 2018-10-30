@@ -136,6 +136,7 @@ section {
 	head-2 = They are Beneficial
 	head-3 = Our Goal
 	head-4 = Sports & Managers
+	head-5 = Please enter your information
 */
 h3.head-1, h3.head-2, h3.head-3, h3.head-4, h3.head-5 {
 	text-decoration: underline;
@@ -148,7 +149,7 @@ h3.head-1, h3.head-2, h3.head-3, h3.head-4, h3.head-5 {
 	height: auto;
 }
 
-p.benefits, p.goal, p.organization, p.p-interest, p.p-form {
+p.benefits, p.goal, p.organization, p.p-interest {
 	/*
 		These properties allow the text to fit in any
 		browser window.
@@ -205,7 +206,12 @@ form {
 
 p.p-form {
 	text-decoration: underline;
-	size: 300px;
+	font-size: 20px;
+	color: #f2fcfe;
+}
+
+.information {
+	color: #f2fcfe;
 }
 /* -----For the BotNav.----- */
 .bot-nav {
