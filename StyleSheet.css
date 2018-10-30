@@ -213,6 +213,13 @@ p.p-form {
 .information {
 	color: #f2fcfe;
 }
+
+.sports {
+	max-width: 80%;
+	max-height: 30vh;
+	margin: auto;
+	padding-left: 10px;
+}
 /* -----For the BotNav.----- */
 .bot-nav {
 	background-color: #333;
