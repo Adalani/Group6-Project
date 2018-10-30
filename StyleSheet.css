@@ -202,6 +202,11 @@ form {
 
 	color: #f2fcfe;
 }
+
+p.p-form {
+	text-decoration: underline;
+	size: 300px;
+}
 /* -----For the BotNav.----- */
 .bot-nav {
 	background-color: #333;
