@@ -113,7 +113,7 @@ section {
 	padding-top: 10px;
 }
 
-.image {
+.image, .image-2 {
 	position: relative;
 }
 
@@ -125,7 +125,13 @@ section {
 	max-height: 155px;
 }
 
-.register {
+.image-2 img {
+	top: 0px;
+	max-width: 90%;
+	width: 500px;
+}
+
+.register, .soccer {
 	max-width: 100%;
 	max-height: 100vh;
 	margin: auto;
@@ -165,8 +171,12 @@ p {
 	max-width: 1000px;
 }
 
-.list-1, .table-1, .information {
+ul, .table-1, .information {
 	color: #f2fcfe;
+}
+
+ul {
+	padding-left: 70px;
 }
 
 .sports-managers, .interest {
