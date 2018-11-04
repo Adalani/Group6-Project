@@ -113,7 +113,7 @@ section {
 	padding-top: 10px;
 }
 
-.image, .image-2 {
+.image, .image-2, .image-3 {
 	position: relative;
 }
 
@@ -130,6 +130,12 @@ section {
 	max-width: 90%;
 	width: 500px;
 }
+
+ .image-3 img {
+	 top: 0px;
+	 max-width: 90%;
+	 width: 600px;
+ }
 
 .register, .soccer {
 	max-width: 100%;
