@@ -3,90 +3,75 @@
 <html>
 
     <head>
-        <title>Sign Up Sheet</title>
-        <link rel = "stylesheet" type = "text/css" href = "StyleSheet.css">
-        <link rel = "stylesheet" type = "text/css" href = "fa-style.css">
-        <meta name = "viewport" content = "width = device-width, 
-        initial-scale = 1">
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="StyleSheet.css">
+        <link rel="stylesheet" type="text/css" href="fa-style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     
     <body>
-        <nav id = "top" class = "navbar">
-            <a href = "index.html">Home</a>
-            <div class = "dropdown">
-                <button class = "dropbtn">Sports
-                    <i class = "fa fa-caret-down"></i>
+        <nav id="top" class="navbar">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Sports
+                    <i class="fa fa-caret-down"></i>
                 </button>
-                    <div class = "dropdown-content">
-                        <a href = "soccer.html" target = "_blank">Soccer</a>
-                        <a href = "basketball.html" target = "_blank">
-                            Basketball</a>
-                        <a href = "cricket.html" target = "_blank">Cricket</a>
-                        <a href = "hockey.html" target = "_blank">Hockey</a>
+                <div class="dropdown-content">
+                    <a href="soccer.html" target="_blank">Soccer</a>
+                    <a href="basketball.html" target="_blank">Basketball</a>
+                    <a href="cricket.html" target="_blank">Cricket</a>
+                    <a href="hockey.html" target="_blank">Hockey</a>
                 </div>
             </div>
-            <a href = "form.html">Sign Up</a>
+            <a href="form.html">Sign Up</a>
         </nav>
-            <!-- This form allows the user to enter their first name
-                and last name, their email address, decide
-                which sport they want to play and select the desired method
-                of payment. -->
-
-            <section>
-                <p class = "p-form">
-                    We're glad to see that you've decided to join!  We just
-                    need a little bit of information about you:
-                </p>
-                <ul class = "information">
-                    <li>Your first name</li>
-                    <li>Your last name</li>
-                    <li>Your email address</li>
-                    <li>What sport you'd like to sign up for</li>
-                    <li>Your desired method of payment</li>
-                </ul>
-                <h3>Please enter your information</h3>
+        <section>
+            <p class="p-form">
+                We're glad to see that you've decided to join!  We just
+                need a little bit of information about you:</p>
+            <ul class="information">
+                <li>Your first name</li>
+                <li>Your last name</li>
+                <li>Your email address</li>
+                <li>What sport you'd like to sign up for</li>
+                <li>Your desired method of payment</li>
+            </ul>
+            <h3>Please enter your information</h3>
+            <form action="https://formspree.io/joel.leger@student.sl.on.ca"
+            method="POST">
+                <label>First name:</label>
+                <input type="text" placeholder="First name" name="F-name">
+                <label>Last name:</label>
+                <input type="text" placeholder="Last name" name="L-name">
+                <label>Email address:</label>
+                <input type="email" placeholder="Email address" name="email-address">
+                <label>Which sport would you like to sign up for?</label>
+                <select name="sport">
+                    <option value="0">Select a sport...</option>
+                    <option value="1">Soccer</option>
+                    <option value="2">Basketball</option>
+                    <option value="3">Cricket</option>
+                    <option value="4">Hockey</option>
+                </select>
+                <label>How will you be paying?</label>
+                <select name="payment">
+                    <option value="0">Select a method of payment...</option>
+                    <option value="1">Cash</option>
+                    <option value="2">Cheque</option>
+                </select>
+                    <br><br>
+                Click "Submit" after you're done with the form.
+                You will be notified via email how to make the payment
+                for entrance into the sports league.
                     <br>
-                <form action = "https://formspree.io/joel.leger@student.sl.on.ca"
-                            method = "POST">
-                    First name:
-                    <input type = "text" placeholder = "First name" 
-                        name = "F-name">
-                        <br><br>
-                    Last name:
-                    <input type = "text" placeholder = "Last name" name = "L-name">
-                        <br><br><br>
-                    Email address:
-                    <input type = "email" placeholder = "Email address" 
-                        name = "email-address">
-                        <br><br><br>
-                    Which sport would you like to sign u
-                    <select name = "sport">
-                        <option value = "0">Select a sport...</option>
-                        <option value = "1">Soccer</option>
-                        <option value = "2">Basketball</option>
-                        <option value = "3">Cricket</option>
-                        <option value = "4">Hockey</option>
-                    </select>
-                        <br><br><br>
-                    How will you be paying?
-                    <select name = "payment">
-                        <option value = "0">Select a method of payment...</option>
-                        <option value = "1">Cash</option>
-                        <option value = "2">Cheque</option>
-                    </select>
-                        <br><br>
-                    Click "Submit" after you're done with the form.
-                    You will be notified via email how to make the payment
-                    for entrance into the sports league.
-                        <br>
-                    <input type = "submit" value = "Submit">
-                </form>
-            </section>
-                <br>
+                <input type = "submit" value = "Submit">
+            </form>
+        </section>
+            <br>
             
-            <div class = "image">
-                <img class = "register" src = "registration-image.jpg"/>
-            </div>
+        <div class = "image">
+            <img class = "register" src = "registration-image.jpg"/>
+        </div>
         
         <!--
             Once clicked, this allows the user to immediately go back
