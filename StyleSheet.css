@@ -185,6 +185,13 @@ input {
 	padding-left: 10px;
 }
 
+footer {
+	background-color: gray;
+	padding: 10px;
+	text-align: center;
+	font-size: 14px;
+}
+
 /* -----For the BotNav----- */
 .bot-nav {
 	background-color: #333;
