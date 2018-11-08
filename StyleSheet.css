@@ -116,8 +116,7 @@ section {
 	padding: 25px;
 }
 
-h3,
-header {
+h3 {
 	text-decoration: underline;
 	font-size: 27px;
 }
