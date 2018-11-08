@@ -98,15 +98,15 @@ body {
 
 /* Upon hover, the links will change colours. */
 .navbar a:hover,
-.dropdown:hover .dropbtn
-.bot-nav a:hover{
+.dropdown:hover .dropbtn,
+.bot-nav a:hover {
 	background-color: #ddd;
 	color: black;
 }
 
 	/* Add a color to the active/current link. */
 .navbar a:active,
-.dropdown:active .dropbtn
+.dropdown:active .dropbtn,
 .bot-nav a.active {
 	background-color: #4CAF50;
 	color: #f2fcfe;
