@@ -187,11 +187,14 @@ input {
 
 footer {
 	background-color: gray;
+	width: 100%;
 	padding: 10px;
 	text-align: center;
 	font-size: 14px;
 	position: relative;
 	bottom: 0;
+	clear: both;
+	z-index: 2;
 }
 
 /* -----For the BotNav----- */
@@ -200,6 +203,7 @@ footer {
 	position: fixed;
 	bottom: 0;
 	right: 0;
+	z-index: 5;
 }
 
 .bot-nav a {
