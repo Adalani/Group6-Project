@@ -196,12 +196,13 @@ footer {
 	bottom: 0;
 	clear: both;
 	z-index: 2;
+	margin-top: 20px;
 }
 
 /* -----For the BotNav----- */
 .bot-nav {
 	background-color: #333;
-	position: fixed;
+	position: relative;
 	bottom: 0;
 	right: 0;
 	z-index: 5;
