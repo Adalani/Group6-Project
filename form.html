@@ -6,6 +6,8 @@
         <title>Sign Up</title>
         <link rel="stylesheet" type="text/css" href="StyleSheet.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" 
+        src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
     
     <body>
@@ -77,17 +79,25 @@
             <img class="register" src="images/registration-image.jpg" />
         </section>
  
-        <!--
-            Once clicked, this allows the user to immediately go back
-            to the top of the page
-        -->
-        <div class="bot-nav">
+        <div class="bot-nav" id="JavaNav">
             <a href="#top">Back to the top of the page</a>
         </div>
         
-        <footer>
+        <footer id="JavaFooter">
             Copyright, 2018<br>
             Inter-Sports League Ltd.<br>
         </footer>
-    </body> 
+    </body>
+    <script>
+        $(document).scroll(function() {
+            checkOffset();
+        });
+        function checkOffset() {
+            if($('#JavaNav').offset().top + $('#JavaNav').height() 
+                                >= $('#JavaFooter').offset().top - 10)
+                $('#JavaNav').css('position', 'absolute');
+            if($(document).scrollTop() + window.innerHeight < $('#JavaFooter').offset().top)
+            $('#JavaNav').css('position', 'fixed');
+        }
+    </script>
 </html>
