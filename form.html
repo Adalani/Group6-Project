@@ -88,19 +88,22 @@
             Inter-Sports League Ltd.<br>
         </footer>
     </body>
-    <!--What the hell do I do here-->
+
     <script>
-        $(document).scroll(function() {
-            checkOffset();
-        });
-        function checkOffset() {
-            for($('#JavaNav').offset().top + $('#JavaNav').height()
-                        >= $('#JavaFooter').offset().top - 56)($('#JavaNav').css('position', 'fixed'));
-            if($('#JavaNav').offset().top + $('#JavaNav').height() 
-                                >= $('#JavaFooter').offset().top - 10)
-                $('#JavaNav').css('position', 'absolute');
-            if($(document).scrollTop() + window.innerHeight < $('#JavaFooter').offset().top)
-            $('#JavaNav').css('position', 'fixed');
-        }
+function checkOffset() {
+  	if ($('#JavaNav').offset().top + $('#JavaNav').height() >= 
+            $('#JavaFooter').offset().top - 10)
+        $('#JavaNav').css('position', 'absolute');
+
+    if ($(document).scrollTop() + window.innerHeight < 
+            $('#JavaFooter').offset().top)
+        $('#JavaNav').css('position', 'fixed'); // restore when you scroll
+        //up
+}
+
+$(document).scroll(function() {
+    checkOffset();
+});
+
     </script>
 </html>
