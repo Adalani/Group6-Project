@@ -94,6 +94,8 @@
             checkOffset();
         });
         function checkOffset() {
+            for($('#JavaNav').offset().top + $('#JavaNav').height()
+                        >= $('#JavaFooter').offset().top - 56)($('#JavaNav').css('position', 'fixed'));
             if($('#JavaNav').offset().top + $('#JavaNav').height() 
                                 >= $('#JavaFooter').offset().top - 10)
                 $('#JavaNav').css('position', 'absolute');
