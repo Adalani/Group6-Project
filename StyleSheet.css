@@ -192,9 +192,12 @@ footer {
 	padding: 10px;
 	text-align: center;
 	font-size: 14px;
+<<<<<<< HEAD
 	clear: both;
 	z-index: 2;
 	bottom: 0;
+=======
+>>>>>>> parent of 7040be7... Made some important changes.
 }
 
 /* -----For the BotNav----- */

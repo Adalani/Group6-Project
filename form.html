@@ -88,4 +88,19 @@
             Inter-Sports League Ltd.<br>
         </footer>
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if($(window).scrollTop() + $(window).height() >= ($(document).height()-70)) {
+                $('.bot-nav').css ('margin-bottom', '70px');
+            }
+            else {
+                $('.bot-nav').css ('margin-bottom', '0');
+            }
+        });
+    </script>
 </html>
