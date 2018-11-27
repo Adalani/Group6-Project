@@ -123,6 +123,10 @@ h3 {
 	font-size: 27px;
 }
 
+h4 {
+	text-decoration: underline;
+}
+
 button {
 	display: block;
 	margin: 0 auto;
