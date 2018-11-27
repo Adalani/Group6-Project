@@ -71,4 +71,15 @@
             Inter-Sports League Ltd.<br>
         </footer>
     </body>
+
+    <script>
+        $(window).scroll(function() {
+            if($(window).scrollTop() + $(window).height() >= ($(document).height()-70)) {
+                $('.bot-nav').css ('margin-bottom', '70px');
+            }
+            else {
+                $('.bot-nav').css ('margin-bottom', '0');
+            }
+        });
+    </script>
 </html>

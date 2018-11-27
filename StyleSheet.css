@@ -10,6 +10,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://code.jquery.com/jquery-3.3.1.js');
 
 
 /*
@@ -192,12 +193,9 @@ footer {
 	padding: 10px;
 	text-align: center;
 	font-size: 14px;
-<<<<<<< HEAD
 	clear: both;
 	z-index: 2;
 	bottom: 0;
-=======
->>>>>>> parent of 7040be7... Made some important changes.
 }
 
 /* -----For the BotNav----- */
