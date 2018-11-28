@@ -11,7 +11,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
 /*
 	--> group pages together.  Each element for one page should be grouped
 	together and separated from another page via comments. If I have the same
@@ -58,6 +57,7 @@ body {
 	overflow: hidden;
 }
 
+/* This affects the dropdown's button. */
 .dropdown .dropbtn {
 	font-size: 16px;
 	border: none;
@@ -70,6 +70,7 @@ body {
 	cursor: pointer;
 }
 
+/* This affects the content of the dropdown. */
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -79,6 +80,7 @@ body {
 	z-index: 1;
 }
 
+/* This affects the links inside of the content of the dropdown. */
 .dropdown-content a {
 	float: none;
 	color: black;
@@ -88,10 +90,12 @@ body {
 	text-align: left;
 }
 
+/* This affects the dropdown's content's links upon hover. */
 .dropdown-content a:hover {
 	background-color: #ddd;
 }
 
+/* This affects the dropdown's content upon hover. */
 .dropdown:hover .dropdown-content {
 	display: block;
 }
@@ -104,7 +108,7 @@ body {
 	color: black;
 }
 
-	/* Add a color to the active/current link. */
+/* Adds a color to the active/current link. */
 .navbar a:active,
 .dropdown:active .dropbtn,
 .bot-nav a.active {
@@ -112,11 +116,13 @@ body {
 	color: #f2fcfe;
 }
 
+/* Affects the sections on all pages. */
 section {
 	padding: 25px;
 	overflow: hidden;
 }
 
+/* Affects h3 and h4 on all pages. */
 h3 {
 	text-decoration: underline;
 	font-size: 27px;
@@ -126,11 +132,13 @@ h4 {
 	text-decoration: underline;
 }
 
+/* Affects every button element. */
 button {
 	display: block;
 	margin: 0 auto;
 }
 
+/* Affects every img element. */
 img {
 	padding: 10px 0 10px 0;
 }
