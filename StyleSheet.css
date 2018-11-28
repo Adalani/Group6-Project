@@ -191,6 +191,16 @@ input {
 	padding-left: 10px;
 }
 
+.name {
+	min-width: 130px;
+	max-width: 170px;
+}
+
+#email {
+	min-width: 160px;
+	max-width: 200px;
+}
+
 footer {
 	background-color: gray;
 	width: 100%;
