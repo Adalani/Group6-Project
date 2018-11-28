@@ -11,13 +11,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-/*
-	--> group pages together.  Each element for one page should be grouped
-	together and separated from another page via comments. If I have the same
-	code for more than one element but they're on different pages, don't
-	group them together --> separate by page.  Don't group via element type.
-	Furthermore, add a description on top of each element that specifies what it's affecting.
-*/
 html,
 body {
 	margin: 0px;
