@@ -2,12 +2,6 @@
 	For fonts: https://uigradients.com/#Telegram
 */
 
-
-/*
-	For free hosting: x10hosting.com
-*/
-
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -22,24 +16,17 @@ body {
 }
 
 .navbar {
-		/* This defines the background colour of the nav bar. */
 	background-color: #333;
-		/* The overflow property specifies whether text
-			 will be visible if it exceeds the border in length. */
 	overflow: hidden;
 	display : flex;
 	justify-content: space-evenly;
 }
 
-/* The links inside the navigation bar are styled. */
 .navbar a {
-	/* The float property defines the position of an object. */
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
-		/* Padding creates space around an object. */
 	padding: 14px 16px;
-		/* font-size defines the size of the font. */
 	font-size: 16px;
 	text-decoration: none;
 }
@@ -50,7 +37,6 @@ body {
 	overflow: hidden;
 }
 
-/* This affects the dropdown's button. */
 .dropdown .dropbtn {
 	font-size: 16px;
 	border: none;
@@ -63,7 +49,6 @@ body {
 	cursor: pointer;
 }
 
-/* This affects the content of the dropdown. */
 .dropdown-content {
 	display: none;
 	position: absolute;
@@ -73,7 +58,6 @@ body {
 	z-index: 1;
 }
 
-/* This affects the links inside of the content of the dropdown. */
 .dropdown-content a {
 	float: none;
 	color: black;
@@ -83,17 +67,14 @@ body {
 	text-align: left;
 }
 
-/* This affects the dropdown's content's links upon hover. */
 .dropdown-content a:hover {
 	background-color: #ddd;
 }
 
-/* This affects the dropdown's content upon hover. */
 .dropdown:hover .dropdown-content {
 	display: block;
 }
 
-/* Upon hover, the links will change colours. */
 .navbar a:hover,
 .dropdown:hover .dropbtn,
 .bot-nav a:hover {
@@ -101,7 +82,6 @@ body {
 	color: black;
 }
 
-/* Adds a color to the active/current link. */
 .navbar a:active,
 .dropdown:active .dropbtn,
 .bot-nav a.active {
@@ -109,13 +89,11 @@ body {
 	color: #f2fcfe;
 }
 
-/* Affects the sections on all pages. */
 section {
 	padding: 25px;
 	overflow: hidden;
 }
 
-/* Affects h3 and h4 on all pages. */
 h3 {
 	text-decoration: underline;
 	font-size: 27px;
@@ -125,13 +103,11 @@ h4 {
 	text-decoration: underline;
 }
 
-/* Affects every button element. */
 button {
 	display: block;
 	margin: 0 auto;
 }
 
-/* Affects every img element. */
 img {
 	padding: 10px 0 10px 0;
 }
