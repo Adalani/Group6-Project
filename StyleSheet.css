@@ -2,6 +2,10 @@
 	For fonts: https://uigradients.com/#Telegram
 */
 
+/*
+	For free hosting: x10hosting.com
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -13,6 +17,7 @@ body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	color: #f2fcfe;
+	max-width: auto;
 }
 
 .navbar {
@@ -31,7 +36,6 @@ body {
 	text-decoration: none;
 }
 
-/* Dropdown styles */
 .dropdown {
 	float: left;
 	overflow: hidden;
@@ -144,23 +148,31 @@ input {
 	text-align: center;
 }
 
-.soccer,
-.register {
+.sports,
+#register {
 	width: 500px;
 	height: auto;
 }
 
-.register {
+#basketball-players,
+#basketball-positions {
+	width: auto;
+	max-height: 400px;
+}
+
+#register {
 	float: right;
 }
 
 .p-form {
 	padding-left: 10px;
-	text-decoration: underline;
+	border: solid white;
+	width: 70%;
+	border-radius: 5px;
 	font-size: 20px;
 }
 
-.sports {
+#balls {
 	max-width: 80%;
 	max-height: 30vh;
 	margin: auto;
@@ -178,7 +190,7 @@ input {
 }
 
 footer {
-	background-color: gray;
+	background-color: #333;
 	width: 100%;
 	padding: 10px;
 	text-align: center;
@@ -204,4 +216,16 @@ footer {
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+}
+
+/* -----Tablet----- */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	.navbar,
+	body {
+		font-size: 13px;
+	}
+}
+/* -----Mobile----- */
+@media only screen and (max-width: 767px) {
+
 }
