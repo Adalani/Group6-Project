@@ -194,7 +194,7 @@ footer {
 	width: 100%;
 	padding: 10px;
 	text-align: center;
-	font-size: 14rem;
+	font-size: 0.75em;
 	clear: both;
 	z-index: 2;
 	bottom: 0;
@@ -218,6 +218,12 @@ footer {
 	font-size: 17px;
 }
 
+@media only screen and (min-width: 1200px) {
+	body {
+		font-size: 16px;
+	}
+}
+
 /* -----Tablet----- */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 	.navbar,
@@ -225,11 +231,11 @@ footer {
 		/* I'd want to change the font size for each specific element.  Not jsut for the entire body. */
 		font-size: 13px;
 	}
-	footer {
-		font-size: 10px;
-	}
 }
 /* -----Mobile----- */
 @media only screen and (max-width: 767px) {
-
+	.navbar,
+	body {
+		font-size: 10px;
+	}
 }
