@@ -55,8 +55,13 @@
             <img class="sports" src="images/Soccer/soccer-players.jpg" 
             alt="Soccer Players"/>
         </section>
-        <section>
-            <h3>More Details</h3>
+
+        <button id="show-detail" onclick="showDetail()">
+            More Details</button>
+        <button id="hide-detail" onclick="hideDetail()">
+            Less Details</button>
+
+        <section id="details">
             <p> A soccer team is comprised of around 11 players, at least one 
                 of them being the goalkeeper.</p>
             <h4>The positions include:</h4>
@@ -116,5 +121,17 @@
                 $('.bot-nav').css ('margin-bottom', '0');
             }
         });
+    </script>
+    <script>
+        function showDetail() {
+            document.getElementById("details").style.display="block";
+            document.getElementById("show-detail").style.display="none";
+            document.getElementById("hide-detail").style.display="block";
+        }
+        function hideDetail() {
+            document.getElementById("details").style.display="none";
+            document.getElementById("hide-detail").style.display="none";
+            document.getElementById("show-detail").style.display="block";
+        }
     </script>
 </html>
