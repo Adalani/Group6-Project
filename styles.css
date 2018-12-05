@@ -3,7 +3,7 @@ body{
     background-image: url("basketball.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    color:white;
+    color:black;
     scroll-behavior: smooth;
     
 }
