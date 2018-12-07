@@ -134,6 +134,10 @@ td {
 	border-left-style: solid;
 }
 
+section {
+	max-width: 85%;
+}
+
 /* -----Form page----- */
 label,
 input {
@@ -155,7 +159,9 @@ input {
 }
 
 #basketball-players,
-#basketball-positions {
+#basketball-positions,
+#cricket-players,
+#cricket-positions {
 	width: auto;
 	max-height: 400px;
 }
@@ -184,7 +190,10 @@ input {
 	max-width: 170px;
 }
 
-#details {
+#soccer-details,
+#cricket-details,
+#basketball-details,
+#hockey-details {
 	display: none;
 }
 
@@ -259,6 +268,14 @@ footer {
 	h3 {
 		font-size: 23px;
 	}
+	.bot-nav {
+		bottom: 7px;
+		right: 7px;
+	}
+	.bot-nav a {
+		font-size: 12px;
+		padding: 9px 11px;
+	}
 }
 /* -----Mobile----- */
 @media only screen and (max-width: 767px) {
@@ -268,5 +285,13 @@ footer {
 	}
 	h3 {
 		font-size: 19px;
+	}
+	.bot-nav {
+		bottom: 3px;
+		right: 3px;
+	}
+	.bot-nav a {
+		font-size: 8px;
+		padding: 5px 7px;
 	}
 }
