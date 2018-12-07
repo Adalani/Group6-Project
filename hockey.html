@@ -53,8 +53,13 @@
             <img class="sports" src="images/Hockey/hockey-players.jpg" 
             alt="hockey-players"/>
         </section>
-        <section>
-            <h3>More Details</h3>
+
+        <button id="show-detail" onclick="showDetail()">
+                More Details</button>
+        <button id="hide-detail" onclick="hideDetail()">
+            Less Details</button>
+
+        <section id="cricket-details">
             <p class="p-1"> A hockey team is made up of about 11 players, 
                 one of them being a goalie. Only 5 players per team are 
                 allowed on the ice at once.</p>
@@ -116,4 +121,16 @@
             }
         });
     </script>
+    <script>
+        function showDetail() {
+            document.getElementById("hockey-details").style.display="block";
+            document.getElementById("show-detail").style.display="none";
+            document.getElementById("hide-detail").style.display="block";
+        }
+        function hideDetail() {
+            document.getElementById("hockey-details").style.display="none";
+            document.getElementById("hide-detail").style.display="none";
+            document.getElementById("show-detail").style.display="block";
+        }
+    </script>    
 </html>

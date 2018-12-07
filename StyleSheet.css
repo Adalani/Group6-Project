@@ -252,7 +252,7 @@ footer {
 @media only screen and (min-width: 1200px) {
 	body,
 	.navbar {
-		font-size: 16px;
+		font-size: 17px;
 	}
 	h3 {
 		font-size: 27px;
@@ -287,8 +287,8 @@ footer {
 		font-size: 19px;
 	}
 	.bot-nav {
-		bottom: 3px;
-		right: 3px;
+		bottom: 4px;
+		right: 4px;
 	}
 	.bot-nav a {
 		font-size: 8px;
