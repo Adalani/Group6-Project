@@ -145,7 +145,7 @@ input {
 	margin: 10px 0 10px 0;
 }
 
-/* Custom classes */
+/* Custom classes + ids */
 .interest {
 	margin-top: 50px;
 	width: 300px;
@@ -217,6 +217,10 @@ button {
 	max-width: 250px;
 }
 
+#signUp {
+	left: 150px;
+}
+/* -----Footer----- */
 footer {
 	background-color: #333;
 	width: 100%;
@@ -252,7 +256,7 @@ footer {
 @media only screen and (min-width: 1200px) {
 	body,
 	.navbar {
-		font-size: 17px;
+		font-size: 16px;
 	}
 	h3 {
 		font-size: 27px;

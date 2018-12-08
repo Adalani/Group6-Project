@@ -114,13 +114,15 @@
     </script>
     <script>
         $(window).scroll(function() {
-            if($(window).scrollTop() + $(window).height() >= ($(document).height()-70)) {
-                $('.bot-nav').css ('margin-bottom', '70px');
-            }
-            else {
-                $('.bot-nav').css ('margin-bottom', '0');
-            }
-        });
+            while($(footer).height()-50){
+                if($(window).scrollTop() + $(window).height() >= ($(document).height()-70)) {
+                    $('.bot-nav').css ('margin-bottom', '70px');
+                }
+                else {
+                    $('.bot-nav').css ('margin-bottom', '0');
+                }
+            }});
+            while($(footer).height())
     </script>
     <script>
         function showDetail() {
