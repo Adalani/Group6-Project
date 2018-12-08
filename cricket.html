@@ -55,13 +55,7 @@
             <img class="sports" src="images/Cricket/cricket-players.jpg" 
             alt="Cricket Players"/>
         </section>
-
-        <button id="show-detail" onclick="showDetail()">
-            More Details</button>
-        <button id="hide-detail" onclick="hideDetail()">
-            Less Details</button>
-
-        <section id="cricket-details">
+        <section>
             <p> A cricket team is composed of 11 players, all with different 
                 qualities.</p>
             <h4>The positions include:</h4>
@@ -115,17 +109,5 @@
                 $('.bot-nav').css ('margin-bottom', '0');
             }
         });
-    </script>
-    <script>
-        function showDetail() {
-            document.getElementById("cricket-details").style.display="block";
-            document.getElementById("show-detail").style.display="none";
-            document.getElementById("hide-detail").style.display="block";
-        }
-        function hideDetail() {
-            document.getElementById("cricket-details").style.display="none";
-            document.getElementById("hide-detail").style.display="none";
-            document.getElementById("show-detail").style.display="block";
-        }
     </script>
 </html>
