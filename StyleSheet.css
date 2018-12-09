@@ -163,6 +163,11 @@ label {
 	max-width: 170px;
 }
 
+.in {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
 .p-form {
 	padding-left: 10px;
 	border: solid white;
@@ -171,8 +176,7 @@ label {
 	font-size: 1.5em;
 }
 
-.sports{
-	width: 500px;
+.sports {
 	height: auto;
 }
 
@@ -247,14 +251,34 @@ footer {
 	video {
 		width: 600px;
 	}
-	img {
-		max-width: 500px;
-	}
 	.dropdown-content a {
 		padding: 14px 0 14px 16px;
 	}
+	#basketball-players {
+		max-height: 400px;
+		width: auto;
+	}
+	#basketball-positions {
+		max-width: 300px;
+	}
+	#cricket-players {
+		max-width: 450px;
+	}
+	#cricket-positions,
+	#soccer-positions {
+		max-width: 350px;
+	}
+	#hockey-players {
+		max-width: 550px;
+	}
+	#hockey-positions {
+		max-width: 500px;
+	}
 	#signUp {
 		margin-left: 95px;
+	}
+	#soccer-players {
+		max-width: 400px;
 	}
 }
 /* -----Tablet----- */
@@ -269,9 +293,6 @@ footer {
 	}
 	h4 {
 		font-size: 13px;
-	}
-	img {
-		max-width: 400px;
 	}
 	section {
 		padding: 25px 5px 25px 25px;
@@ -293,8 +314,26 @@ footer {
 	#balls {
 		max-width: 50%;
 	}
-	#show-detail, #hide-detail {
-		padding: 7px;
+	#basketball-players {
+		max-height: 300px;
+		width: auto;
+	}
+	#basketball-positions {
+		max-width: 200px;
+	}
+	#cricket-players,
+	#soccer-players {
+		max-width: 350px;
+	}
+	#cricket-positions,
+	#soccer-positions {
+		max-width: 250px;
+	}
+	#hockey-players {
+		max-width: 380px;
+	}
+	#hockey-positions {
+		max-width: 400px;
 	}
 	#signUp {
 		font-size: 8px;
@@ -315,11 +354,13 @@ footer {
 	h4 {
 		font-size: 10px;
 	}
-	img {
-		max-width: 250px;
-	}
 	section {
 		padding: 25px 25px 5px 25px;
+		text-align: center;
+	}
+	ul {
+		list-style-position: inside;
+		padding: 0;
 	}
 	video {
 		width: 200px;
@@ -338,9 +379,34 @@ footer {
 	#balls {
 		max-width: 30%;
 	}
+	#basketball-players {
+		max-height: 300px;
+		width: auto;
+		display: block;
+		margin: auto;
+	}
+	#basketball-positions {
+		max-width: 200px;
+		display: block;
+		margin: auto;
+	}
+	#cricket-players {
+		max-width: 350px;
+	}
+	#cricket-positions,
+	#hockey-players,
+	#hockey-positions {
+		max-width: 250px;
+	}
 	#signUp {
 		font-size: 6px;
 		margin-left: 122px;
 		padding: 6px;
+	}
+	#soccer-players {
+		max-width: 325px;
+	}
+	#soccer-positions {
+		max-width: 225px;
 	}
 }
