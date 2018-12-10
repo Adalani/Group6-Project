@@ -161,20 +161,8 @@ label {
 	font-weight: bold;
 }
 
-.p-form {
-	padding-left: 10px;
-	border: solid white;
-	width: 70%;
-	border-radius: 5px;
-	font-size: 1.5em;
-}
-
 .sports {
 	height: auto;
-}
-
-#register {
-	width: 450px;
 }
 
 #balls {
@@ -193,7 +181,16 @@ label {
 	text-decoration: none;
 }
 
+#p-form {
+	padding-left: 10px;
+	border: solid white;
+	width: 70%;
+	border-radius: 5px;
+	font-size: 1.5em;
+}
+
 #register {
+	width: 450px;
 	float: right;
 }
 
@@ -236,7 +233,13 @@ footer {
 	.navbar, button, .bot-nav a,
 	section, div, header, footer,
 	ul, li, p, table, label, input, select {
-		font-size: 14px;
+		font-size: 12px;
+	}
+	form,
+	input,
+	label,
+	select {
+		margin: 15px;
 	}
 	h3 {
 		font-size: 24px;
@@ -280,6 +283,12 @@ footer {
 	section, div, header, footer,
 	ul, li, p, table, label, input, option, select {
 		font-size: 10px;
+	}
+	form,
+	input,
+	label,
+	select {
+		margin: 15px;
 	}
 	h3 {
 		font-size: 17px;
@@ -328,6 +337,9 @@ footer {
 	#hockey-positions {
 		max-width: 400px;
 	}
+	#register {
+		max-width: 280px;
+	}
 	#signUp {
 		font-size: 8px;
 		margin-left: 113px;
@@ -341,11 +353,23 @@ footer {
 	ul, li, p, table, label, input, select {
 		font-size: 8px;
 	}
+	form,
+	input,
+	label,
+	select {
+		margin: 10px;
+	}
 	h3 {
 		font-size: 13px;
 	}
 	h4 {
 		font-size: 10px;
+	}
+	input,
+	table,
+	.interest,
+	#p-form {
+		margin: 0 auto;
 	}
 	section {
 		padding: 25px 25px 5px 25px;
@@ -390,6 +414,12 @@ footer {
 	#hockey-players,
 	#hockey-positions {
 		max-width: 250px;
+	}
+	#register {
+		display: block;
+		max-width: 200px;
+		margin: auto;
+		float: none;
 	}
 	#signUp {
 		font-size: 6px;

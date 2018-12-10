@@ -41,11 +41,10 @@
         </header>
 
         <section>
-            <h3>Sign-up</h3>
-            <p class="p-form">
+            <p id="p-form">
                 We're glad to see that you've decided to join!  We just
                 need a little bit of information about you:</p>
-            <ul class="information">
+            <ul>
                 <li>Your first name</li>
                 <li>Your last name</li>
                 <li>Your email address</li>
@@ -53,7 +52,7 @@
                 <li>Your desired method of payment</li>
             </ul>
         </section>
-        <section>
+        <section >
             <h3>Please enter your information</h3>
             <form action="https://formspree.io/joel.leger@student.sl.on.ca"
             method="POST">
@@ -64,7 +63,8 @@
                 <input type="text" placeholder="Last name" name="L-name"
                     class="name">
                 <label>Email address:</label>
-                <input type="email" placeholder="Email address" name="email-address" id="email">
+                <input type="email" placeholder="Email address" 
+                    name="email-address" id="email">
                 <label>Which sport would you like to sign up for?</label>
                 <select name="sport">
                     <option value="0">Select a sport...</option>
@@ -79,9 +79,11 @@
                     <option value="1">Cash</option>
                     <option value="2">Cheque</option>
                 </select>
-                <p> Click "Submit" after you're done with the form.
-                    You will be notified via email how to make the payment
-                    for entrance into the sports league.</p>
+                    <hr>
+                <p id="p-submit"> Click "Submit" after you're done 
+                    with the form. You will be notified via email how 
+                    to make the payment for entrance into the sports 
+                    league.</p>
                 <input type="submit" value="Submit">
             </form>
         </section>
@@ -93,7 +95,7 @@
         <div class="bot-nav">
             <a href="#top">Back to the top of the page</a>
         </div>
-            <br><br><br>
+            <br><br><br><br><br><br><br>
         <footer>
             Copyright, 2018<br>
             Inter-Sports League Ltd.<br>
@@ -103,7 +105,8 @@
     <script>
         if($(window).width() >= 1200) {
             $(window).scroll(function() {
-                if($(window).scrollTop() + $(window).height() >= ($(document).height()-70)) {
+                if($(window).scrollTop() + $(window).height() >= 
+                ($(document).height()-70)) {
                     $('.bot-nav').css ('margin-bottom', '70px');
                 }
                 else {
@@ -113,7 +116,8 @@
         )};
         if($(window).width() > 767 && $(window).width() < 1200) {
             $(window).scroll(function() {
-                if($(window).scrollTop() + $(window).height() >= ($(document).height()-60)) {
+                if($(window).scrollTop() + $(window).height() >= 
+                ($(document).height()-60)) {
                     $('.bot-nav').css ('margin-bottom', '60px');
                 }
                 else {
@@ -123,7 +127,8 @@
         )}
         if($(window).width() <= 768) {
             $(window).scroll(function() {
-                if($(window).scrollTop() + $(window).height() >= ($(document).height()-50)) {
+                if($(window).scrollTop() + $(window).height() >= 
+                ($(document).height()-50)) {
                     $('.bot-nav').css ('margin-bottom', '50px');
                 }
                 else {
