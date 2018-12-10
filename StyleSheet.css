@@ -226,8 +226,6 @@ footer {
 	text-decoration: none;
 }
 
-/* I'd want to change the font size for each specific element.  Not just for the entire body. */
-
 /* -----Desktop----- */
 @media only screen and (min-width: 1200px) {
 	.navbar, button, .bot-nav a,
