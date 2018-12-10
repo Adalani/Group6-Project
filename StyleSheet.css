@@ -283,12 +283,9 @@ footer {
 /* -----Tablet----- */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 	.navbar, button, .bot-nav a,
-	section, div, header,
+	section, div, header, footer,
 	ul, li, p, table, label, input, option, select {
 		font-size: 10px;
-	}
-	footer {
-		font-size: 4px;
 	}
 	form,
 	input,
@@ -358,9 +355,12 @@ footer {
 /* -----Mobile----- */
 @media only screen and (max-width: 767px) {
 	.navbar, button, .bot-nav a,
-	section, div, header, footer,
+	section, div, header,
 	ul, li, p, table, label, input, select {
-		font-size: 8px;
+		font-size: 10px;
+	}
+	footer {
+		font-size: 5px;
 	}
 	form,
 	input,
@@ -372,7 +372,7 @@ footer {
 		font-size: 13px;
 	}
 	h4 {
-		font-size: 10px;
+		font-size: 11px;
 	}
 	input,
 	table,
