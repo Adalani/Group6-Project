@@ -265,9 +265,7 @@ footer {
 	#soccer-positions {
 		max-width: 350px;
 	}
-	#hockey-players {
-		max-width: 550px;
-	}
+	#hockey-players,
 	#hockey-positions {
 		max-width: 500px;
 	}
