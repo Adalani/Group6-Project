@@ -441,3 +441,46 @@ footer {
 		max-width: 225px;
 	}
 }
+/*basketball style*/
+/*section1*/
+.supreet>h1{
+    
+    font-style:bold;
+    font-size:40px;
+    text-decoration: underline;
+    text-align:center;
+    background-color:blue;;
+    width:100%;
+	opacity:0.5;
+	color:white;
+    
+}
+.supreet>p{
+    font-size:25px;
+}
+/*section2*/
+.dhadli>h2{
+    font-size:30px;
+    color:blue;
+    text-decoration: underline;
+}
+.dhadli>p{
+	font-size:25px;
+}
+/*section3*/
+.kaur>h3{
+    font-size:25px;
+    color:blue;
+    text-decoration: underline;
+
+}
+.kaur>p{
+	font-size:25px;
+}
+/*------ position image----*/
+img{
+    float: right;
+    width:600px;
+    height:650px;
+    margin-right:15px;
+}
