@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Sports News</title>
+        <link rel="Stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <nav id="top" class="navbar">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Sports
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="soccer.html" target="_blank">Soccer</a>
+                        <a href="basketball.html">Basketball</a>
+                        <a href="cricket.html" target="_blank">Cricket</a>
+                        <a href="hockey.html" target="_blank">Hockey</a>
+                    </div>
+                </div>
+                <a href="form.html" target="_blank">Sign Up</a>
+                <div class="dropdown">
+                        <button class="dropbtn">Extras
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="schedules.html" target="_blank">Schedules</a>
+                            <a href="sportsnews.html" target="_blank">Sports   
+                                News</a>
+                        </div>
+                    </div>
+               
+            </nav>
+        </header>
+        <h1>Want to know more about sports:</h1>
+        <h3>Below we provide links to get more information about basketball </h3>
+        <div class="links">
+                <ol>
+                    <li><a href="https://ca.nba.com/?gr=www">NBA</a><br/></li>
+                    <li><a href="https://ca.global.nba.com/teamindex/">Teams</a></li>
+                    <li><a href="https://www.biography.com/people/groups/athletes-basketball-players">USA Players</a></li>
+                    <li><a href="https://www.quora.com/Who-is-the-most-famous-player-of-basketball-in-India">Indian Player</a></li>
+                    <li><a href="https://www.complex.com/sports/2016/02/the-top-canadian-basketball-players-of-all-time/">Canadian Player</a></li>
+                </ol>
+        </div>
+        <h3>Below we provide links to get more information about Hockey </h3>
+        <div class="links">
+            <ol>
+                <li><a href="https://www.sportskeeda.com/hockey/5-greatest-indian-hockey-players">Indian Players</a></li>
+                <li><a href="https://www.ranker.com/list/famous-field-hockey-players-from-pakistan/reference">Pakistan Players</a></li>
+                <li><a href="https://asiasamachar.com/2018/08/08/kirandeep-kaur-makes-history-youngest-malaysian-hockey-player-to-play-in-asian-games/">Malaysian Players</a></li>
+                <li><a href="https://www.thetoptens.com/top-international-hockey-teams/">Famous Teams</a></li>
+                
+            </ol>
+        </div>
+        <h3>Below we provide links to get more information about Soccer </h3>
+        <div  class="links">
+            <ol>
+                    <li><a href="https://www.ranker.com/list/famous-soccer-players-from-malaysia/reference">Malaysian Players</a></li>
+                    <li><a href="https://www.ranker.com/list/famous-soccer-players-from-india/reference">Indian Players</a></li>
+                    <li><a href="https://www.ranker.com/list/famous-soccer-players-from-pakistan/reference">Pakistan Players</a></li>
+                    <li><a href="https://www.fifa.com/worldcup/">Fifa World Cup</a></li>
+            </ol>
+        </div>
+        <div class="links">
+                <h3>Below we provide links to get more information about cricket </h3>
+            <ol>
+                <li><a href="https://www.bbc.com/sport/cricket/28970884">BBC</a></li>
+                <li><a href="http://www.espncricinfo.com/india/content/player/country.html?country=6">Indian Players</a></li>
+                <li><a href="http://www.espncricinfo.com/pakistan/content/player/country.html?country=7">Pakistan players</a></li>
+                <li><a href="https://www.cricbuzz.com/cricket-series/2697/icc-cricket-world-cup-2019/matches">World Cup 2019</a></li>
+            </ol>
+        </div>
+
+            
+      
+        <footer>
+                Copyright, 2018<br>
+                Inter-Sports League Ltd.<br>
+        </footer>
+
+
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if($(window).scrollTop() + $(window).height() >= ($(document).height()-70)) {
+            $('.bot-nav').css ('margin-bottom', '70px');
+            }
+            else {
+                $('.bot-nav').css ('margin-bottom', '0');
+            }
+        });
+    </script>
+</html>
