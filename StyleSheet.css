@@ -1,24 +1,7 @@
-/*
-	For fonts: https://uigradients.com/#Telegram
-*/
-
-
-/*
-	For free hosting: x10hosting.com
-*/
-
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
-
-/*
-	--> group pages together.  Each element for one page should be grouped
-	together and separated from another page via comments. If I have the same
-	code for more than one element but they're on different pages, don't
-	group them together --> separate by page.  Don't group via element type.
-	Furthermore, add a description on top of each element that specifies what it's affecting.
-*/
 html,
 body {
 	margin: 0px;
@@ -30,36 +13,28 @@ body {
 }
 
 .navbar {
-		/* This defines the background colour of the nav bar. */
 	background-color: #333;
-		/* The overflow property specifies whether text
-			 will be visible if it exceeds the border in length. */
 	overflow: hidden;
 	display : flex;
 	justify-content: space-evenly;
 }
 
-/* The links inside the navigation bar are styled. */
 .navbar a {
-	/* The float property defines the position of an object. */
 	float: left;
 	color: #f2f2f2;
 	text-align: center;
-		/* Padding creates space around an object. */
 	padding: 14px 16px;
-		/* font-size defines the size of the font. */
-	font-size: 16px;
+	font-size: 1em;
 	text-decoration: none;
 }
 
-/* Dropdown styles */
 .dropdown {
 	float: left;
 	overflow: hidden;
 }
 
 .dropdown .dropbtn {
-	font-size: 16px;
+	font-size: 1em;
 	border: none;
 	outline: none;
 	color: #f2fcfe;
@@ -74,7 +49,6 @@ body {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
@@ -96,7 +70,6 @@ body {
 	display: block;
 }
 
-/* Upon hover, the links will change colours. */
 .navbar a:hover,
 .dropdown:hover .dropbtn,
 .bot-nav a:hover {
@@ -104,7 +77,6 @@ body {
 	color: black;
 }
 
-	/* Add a color to the active/current link. */
 .navbar a:active,
 .dropdown:active .dropbtn,
 .bot-nav a.active {
@@ -112,23 +84,34 @@ body {
 	color: #f2fcfe;
 }
 
-section {
-	padding: 25px;
-	overflow: hidden;
+button {
+	float: none;
+	display: block;
+	padding: 10px;
+	margin: 0 20px;
+	text-decoration: underline;
+	color: darkblue;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 h3 {
 	text-decoration: underline;
-	font-size: 27px;
+	font-size: 1em;
 }
 
-button {
-	display: block;
-	margin: 0 auto;
+h4 {
+	text-decoration: underline;
 }
 
 img {
 	padding: 10px 0 10px 0;
+}
+
+section {
+	max-width: 85%;
+	padding: 25px 25px 5px 25px;
+	overflow: hidden;
 }
 
 /* -----Table 1----- */
@@ -137,74 +120,101 @@ table {
 	color: #f2fcfe;
 }
 
-th {
-	border-bottom: 1px solid #f2fcfe;
-}
-
 td {
 	padding: 10px;
 }
 
-.left {
-	border-left-style: solid;
+th {
+	border-bottom: 1px solid #f2fcfe;
 }
 
 /* -----Form page----- */
-label,
-input {
+input,
+label {
 	display: block;
 	margin: 10px 0 10px 0;
 }
 
-/* Custom classes */
+/* Custom classes/ids */
+.dropbtn {
+	border-radius: 0;
+}
+
 .interest {
 	margin-top: 50px;
 	width: 300px;
 	text-align: center;
 }
 
-.soccer,
-.register {
-	width: 500px;
-	height: auto;
+.left {
+	border-left-style: solid;
 }
 
-.register {
-	float: right;
+.name {
+	min-width: 130px;
+	max-width: 170px;
 }
 
-.p-form {
-	padding-left: 10px;
+.in {
 	text-decoration: underline;
-	font-size: 20px;
+	font-weight: bold;
 }
 
 .sports {
+	height: auto;
+}
+
+#balls {
 	max-width: 80%;
 	max-height: 30vh;
 	margin: auto;
 	padding-left: 10px;
 }
 
+#email {
+	min-width: 190px;
+	max-width: 250px;
+}
+
+#managers {
+	text-decoration: none;
+}
+
+#p-form {
+	padding-left: 10px;
+	border: solid white;
+	width: 70%;
+	max-width: 860px;
+	border-radius: 5px;
+	font-size: 1.5em;
+}
+
+#register {
+	width: 450px;
+	float: right;
+}
+
+#signUp {
+	margin-left: 100px;
+}
+/* -----Footer----- */
 footer {
-	background-color: gray;
+	background-color: #333;
 	width: 100%;
 	padding: 10px;
 	text-align: center;
-	font-size: 14px;
-	position: relative;
-	bottom: 0;
+	font-size: 0.75em;
 	clear: both;
 	z-index: 2;
-	margin-top: 20px;
+	bottom: 0;
 }
 
 /* -----For the BotNav----- */
 .bot-nav {
 	background-color: #333;
-	position: relative;
-	bottom: 0;
-	right: 0;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
 	z-index: 5;
 }
 
@@ -214,145 +224,220 @@ footer {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 17px;
 }
 
-
-.oo {
-    list-style:none;
-	background-color:#595959;
-	color:#ffffff;
-	text-align: center;
-	padding:20px 0 20px 0;
+/* -----Desktop----- */
+@media only screen and (min-width: 1200px) {
+	.navbar, button, .bot-nav a,
+	section, div, header, footer,
+	ul, li, p, table, label, input, select {
+		font-size: 12px;
+	}
+	form,
+	input,
+	label,
+	select {
+		margin: 15px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	video {
+		width: 600px;
+	}
+	.dropdown-content {
+		min-width: 140px;
+	}
+	.dropdown-content a {
+		padding: 14px 0 14px 16px;
+	}
+	#basketball-players {
+		max-height: 400px;
+		width: auto;
+	}
+	#basketball-positions {
+		max-width: 300px;
+	}
+	#cricket-players {
+		max-width: 450px;
+	}
+	#cricket-positions,
+	#soccer-positions {
+		max-width: 350px;
+	}
+	#hockey-players,
+	#hockey-positions {
+		max-width: 500px;
+	}
+	#signUp {
+		margin-left: 95px;
+	}
+	#soccer-players {
+		max-width: 400px;
+	}
 }
-.oo>li{
-	display:inline-block;
-	padding:0 25px 0 25px;
+/* -----Tablet----- */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+	.navbar, button, .bot-nav a,
+	section, div, header, footer,
+	ul, li, p, table, label, input, option, select {
+		font-size: 10px;
+	}
+	form,
+	input,
+	label,
+	select {
+		margin: 15px;
+	}
+	h3 {
+		font-size: 17px;
+	}
+	h4 {
+		font-size: 13px;
+	}
+	section {
+		padding: 25px 5px 25px 25px;
+	}
+	video {
+		width: 400px;
+	}
+	.bot-nav {
+		bottom: 7px;
+		right: 7px;
+	}
+	.bot-nav a {
+		padding: 9px 11px;
+	}
+	.dropdown-content {
+		min-width: 120px;
+	}
+	.dropdown-content a {
+		padding: 10px 0px 10px 14px;
+		margin: 0;
+	}
+	#balls {
+		max-width: 50%;
+	}
+	#basketball-players {
+		max-height: 300px;
+		width: auto;
+	}
+	#basketball-positions {
+		max-width: 200px;
+	}
+	#cricket-players,
+	#soccer-players {
+		max-width: 350px;
+	}
+	#cricket-positions,
+	#soccer-positions {
+		max-width: 250px;
+	}
+	#hockey-players {
+		max-width: 380px;
+	}
+	#hockey-positions {
+		max-width: 400px;
+	}
+	#register {
+		max-width: 280px;
+	}
+	#signUp {
+		font-size: 8px;
+		margin-left: 113px;
+		padding: 8px;
+	}
 }
-.oo >li>a:hover{
-	color:blue;
-
-}
-body img{
-    height:100%;
-    width:100%;
-    position: fixed;
-    z-index: -2;
-}
-.ll h1{
-    background-color:red;
-    font-style: italic;
-    font-size: 40px;
-    font-weight: 500px;
-    color:white;
-    text-align:center;
-    opacity:0.6;
-    height:60px;
-    position:fixed;
-    top:-30px;
-	width:100%;
-
-    }
-#first.p{
-    
-    width:300px;
-    height:350px;
-    color:black;
-    
-    margin-left:300px;
-    border:4px solid blue;
-
-}
-.gill{
-    background-image: url("jiphy.gif");
-}
-.preet{
-    text-align: center;
-    color:yellow;
-    border:3px solid black;
-    height: 50px;
-    padding:30px;
-    background-image:url("jiphy.gif");
-}
-img{
-    height:400px;
-    width:400px;
-}
-.li{
-    margin-left:200px;
-}
-a{
-    color:white;
-    
-}
-.pp{
-   background-image: url("sardara.jpg");
-   width:31%;
-   height: 380px;
-   display:inline-block;
-   margin-left:20px;
-}
-.kk{
-    background-image: url("dyan.jpg");
-    width:31%;
-    height: 380px;
-   display:inline-block;
-   margin-left: 20px;
-
-}
-.ss{
-    background-image: url("jamie-Dwyer.jpg");
-   width:30%;
-   height:380px;
-   display:inline-block;
-   margin:20px;
-    
-   
-}
-.ff{
-    background-image: url("Ric.jpg");
-    width:31%;
-    height:330px;
-    display:inline-block;
-    margin-left: 20px;
-
-}
-.aa{
-    background-image: url("de.jpg");
-    width:31%;
-    height:330px;
-    display:inline-block;
-    margin-left:20px;
-}
-.hh{
-    background-image: url("Dhanraj.jpg");
-    width:31%;
-    height:330px;
-    display:inline-block;
-    margin-left:20px;
-
-}
-
-
-.benefit{
-	text-align: center;
-	font-size: 22px;
-	text-decoration:underline;
-}
-.of{
-	
-	color:red;
-	font-size:26px;
-	text-decoration:underline;
-	font-weight: bold;
-}
-h4{
-	color:black;
-	margin-left:40%;
-	font-size: 28px;
-	text-decoration: underline;
-}
-strong{
-	text-decoration:underline;
-	color:yellow;
+/* -----Mobile----- */
+@media only screen and (max-width: 767px) {
+	.navbar, button, .bot-nav a,
+	section, div, header,
+	ul, li, p, table, label, input, select {
+		font-size: 10px;
+	}
+	footer {
+		font-size: 5px;
+	}
+	form,
+	input,
+	label,
+	select {
+		margin: 10px;
+	}
+	h3 {
+		font-size: 13px;
+	}
+	h4 {
+		font-size: 11px;
+	}
+	input,
+	table,
+	.interest,
+	#p-form {
+		margin: 0 auto;
+	}
+	section {
+		padding: 25px 25px 5px 25px;
+		text-align: center;
+	}
+	ul {
+		list-style-position: inside;
+		padding: 0;
+	}
+	video {
+		width: 200px;
+	}
+	.bot-nav {
+		bottom: 4px;
+		right: 4px;
+	}
+	.bot-nav a {
+		padding: 5px 7px;
+	}
+	.dropdown-content {
+		min-width: 100px;
+	}
+	.dropdown-content a {
+		padding: 8px 0px 8px 12px;
+		margin: 0;
+	}
+	#balls {
+		max-width: 30%;
+	}
+	#basketball-players {
+		max-height: 300px;
+		width: auto;
+		display: block;
+		margin: auto;
+	}
+	#basketball-positions {
+		max-width: 200px;
+		display: block;
+		margin: auto;
+	}
+	#cricket-players {
+		max-width: 350px;
+	}
+	#cricket-positions,
+	#hockey-players,
+	#hockey-positions {
+		max-width: 250px;
+	}
+	#register {
+		display: block;
+		max-width: 200px;
+		margin: auto;
+		float: none;
+	}
+	#signUp {
+		font-size: 6px;
+		margin-left: 122px;
+		padding: 6px;
+	}
+	#soccer-players {
+		max-width: 325px;
+	}
+	#soccer-positions {
+		max-width: 225px;
+	}
 }
