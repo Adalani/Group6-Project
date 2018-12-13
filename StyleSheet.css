@@ -1,3 +1,10 @@
+/*
+	For fonts: https://uigradients.com/#Telegram
+*/
+
+/*
+	For free hosting: x10hosting.com
+*/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -10,6 +17,10 @@ body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	color: #f2fcfe;
+	max-width: auto;
+	background-image: url("sportscity.jpg");
+
+	
 }
 
 .navbar {
@@ -49,6 +60,7 @@ body {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
+	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
 }
@@ -84,15 +96,9 @@ body {
 	color: #f2fcfe;
 }
 
-button {
-	float: none;
-	display: block;
-	padding: 10px;
-	margin: 0 20px;
-	text-decoration: underline;
-	color: darkblue;
-	border-radius: 5px;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+section {
+	padding: 25px;
+	overflow: hidden;
 }
 
 h3 {
@@ -104,14 +110,13 @@ h4 {
 	text-decoration: underline;
 }
 
-img {
-	padding: 10px 0 10px 0;
+button {
+	display: block;
+	margin: 0 auto;
 }
 
-section {
-	max-width: 85%;
-	padding: 25px 25px 5px 25px;
-	overflow: hidden;
+img {
+	padding: 10px 0 10px 0;
 }
 
 /* -----Table 1----- */
@@ -120,48 +125,54 @@ table {
 	color: #f2fcfe;
 }
 
-td {
-	padding: 10px;
-}
-
 th {
 	border-bottom: 1px solid #f2fcfe;
 }
 
-/* -----Form page----- */
-input,
-label {
-	display: block;
-	margin: 10px 0 10px 0;
-}
-
-/* Custom classes/ids */
-.dropbtn {
-	border-radius: 0;
-}
-
-.interest {
-	margin-top: 50px;
-	width: 300px;
-	text-align: center;
+td {
+	padding: 10px;
 }
 
 .left {
 	border-left-style: solid;
 }
 
-.name {
-	min-width: 130px;
-	max-width: 170px;
+/* -----Form page----- */
+label,
+input {
+	display: block;
+	margin: 10px 0 10px 0;
 }
 
-.in {
-	text-decoration: underline;
-	font-weight: bold;
+/* Custom classes */
+.interest {
+	margin-top: 50px;
+	width: 300px;
+	text-align: center;
 }
 
-.sports {
+.sports,
+#register {
+	width: 500px;
 	height: auto;
+}
+
+#basketball-players,
+#basketball-positions {
+	width: auto;
+	max-height: 400px;
+}
+
+#register {
+	float: right;
+}
+
+.p-form {
+	padding-left: 10px;
+	border: solid white;
+	width: 70%;
+	border-radius: 5px;
+	font-size: 20px;
 }
 
 #balls {
@@ -171,33 +182,35 @@ label {
 	padding-left: 10px;
 }
 
+.name {
+	min-width: 130px;
+	max-width: 170px;
+}
+
+#details {
+	display: none;
+}
+
+button {
+	float: none;
+	display: block;
+	padding: 10px;
+	margin: 0 20px;
+	text-decoration: underline;
+	color: darkblue;
+	border-radius: 5px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#hide-detail {
+	display: none;
+}
+
 #email {
 	min-width: 190px;
 	max-width: 250px;
 }
 
-#managers {
-	text-decoration: none;
-}
-
-#p-form {
-	padding-left: 10px;
-	border: solid white;
-	width: 70%;
-	max-width: 860px;
-	border-radius: 5px;
-	font-size: 1.5em;
-}
-
-#register {
-	width: 450px;
-	float: right;
-}
-
-#signUp {
-	margin-left: 100px;
-}
-/* -----Footer----- */
 footer {
 	background-color: #333;
 	width: 100%;
@@ -224,263 +237,39 @@ footer {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+	font-size: 17px;
 }
+
+/* I'd want to change the font size for each specific element.  Not just for the entire body. */
 
 /* -----Desktop----- */
 @media only screen and (min-width: 1200px) {
-	.navbar, button, .bot-nav a,
-	section, div, header, footer,
-	ul, li, p, table, label, input, select {
-		font-size: 12px;
-	}
-	form,
-	input,
-	label,
-	select {
-		margin: 15px;
+	body,
+	.navbar {
+		font-size: 16px;
 	}
 	h3 {
-		font-size: 24px;
-	}
-	video {
-		width: 600px;
-	}
-	.dropdown-content {
-		min-width: 140px;
-	}
-	.dropdown-content a {
-		padding: 14px 0 14px 16px;
-	}
-	#basketball-players {
-		max-height: 400px;
-		width: auto;
-	}
-	#basketball-positions {
-		max-width: 300px;
-	}
-	#cricket-players {
-		max-width: 450px;
-	}
-	#cricket-positions,
-	#soccer-positions {
-		max-width: 350px;
-	}
-	#hockey-players,
-	#hockey-positions {
-		max-width: 500px;
-	}
-	#signUp {
-		margin-left: 95px;
-	}
-	#soccer-players {
-		max-width: 400px;
+		font-size: 27px;
 	}
 }
+
 /* -----Tablet----- */
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
-	.navbar, button, .bot-nav a,
-	section, div, header, footer,
-	ul, li, p, table, label, input, option, select {
-		font-size: 10px;
-	}
-	form,
-	input,
-	label,
-	select {
-		margin: 15px;
+	.navbar,
+	body {
+		font-size: 12px;
 	}
 	h3 {
-		font-size: 17px;
-	}
-	h4 {
-		font-size: 13px;
-	}
-	section {
-		padding: 25px 5px 25px 25px;
-	}
-	video {
-		width: 400px;
-	}
-	.bot-nav {
-		bottom: 7px;
-		right: 7px;
-	}
-	.bot-nav a {
-		padding: 9px 11px;
-	}
-	.dropdown-content {
-		min-width: 120px;
-	}
-	.dropdown-content a {
-		padding: 10px 0px 10px 14px;
-		margin: 0;
-	}
-	#balls {
-		max-width: 50%;
-	}
-	#basketball-players {
-		max-height: 300px;
-		width: auto;
-	}
-	#basketball-positions {
-		max-width: 200px;
-	}
-	#cricket-players,
-	#soccer-players {
-		max-width: 350px;
-	}
-	#cricket-positions,
-	#soccer-positions {
-		max-width: 250px;
-	}
-	#hockey-players {
-		max-width: 380px;
-	}
-	#hockey-positions {
-		max-width: 400px;
-	}
-	#register {
-		max-width: 280px;
-	}
-	#signUp {
-		font-size: 8px;
-		margin-left: 113px;
-		padding: 8px;
+		font-size: 23px;
 	}
 }
 /* -----Mobile----- */
 @media only screen and (max-width: 767px) {
-	.navbar, button, .bot-nav a,
-	section, div, header,
-	ul, li, p, table, label, input, select {
-		font-size: 10px;
-	}
-	footer {
-		font-size: 5px;
-	}
-	form,
-	input,
-	label,
-	select {
-		margin: 10px;
+	.navbar,
+	body {
+		font-size: 8px;
 	}
 	h3 {
-		font-size: 13px;
+		font-size: 19px;
 	}
-	h4 {
-		font-size: 11px;
-	}
-	input,
-	table,
-	.interest,
-	#p-form {
-		margin: 0 auto;
-	}
-	section {
-		padding: 25px 25px 5px 25px;
-		text-align: center;
-	}
-	ul {
-		list-style-position: inside;
-		padding: 0;
-	}
-	video {
-		width: 200px;
-	}
-	.bot-nav {
-		bottom: 4px;
-		right: 4px;
-	}
-	.bot-nav a {
-		padding: 5px 7px;
-	}
-	.dropdown-content {
-		min-width: 100px;
-	}
-	.dropdown-content a {
-		padding: 8px 0px 8px 12px;
-		margin: 0;
-	}
-	#balls {
-		max-width: 30%;
-	}
-	#basketball-players {
-		max-height: 300px;
-		width: auto;
-		display: block;
-		margin: auto;
-	}
-	#basketball-positions {
-		max-width: 200px;
-		display: block;
-		margin: auto;
-	}
-	#cricket-players {
-		max-width: 350px;
-	}
-	#cricket-positions,
-	#hockey-players,
-	#hockey-positions {
-		max-width: 250px;
-	}
-	#register {
-		display: block;
-		max-width: 200px;
-		margin: auto;
-		float: none;
-	}
-	#signUp {
-		font-size: 6px;
-		margin-left: 122px;
-		padding: 6px;
-	}
-	#soccer-players {
-		max-width: 325px;
-	}
-	#soccer-positions {
-		max-width: 225px;
-	}
-}
-/*basketball style*/
-/*section1*/
-.supreet>h1{
-    
-    font-style:bold;
-    font-size:40px;
-    text-decoration: underline;
-    text-align:center;
-    background-color:blue;;
-    width:100%;
-	opacity:0.5;
-	color:white;
-    
-}
-.supreet>p{
-    font-size:25px;
-}
-/*section2*/
-.dhadli>h2{
-    font-size:30px;
-    color:blue;
-    text-decoration: underline;
-}
-.dhadli>p{
-	font-size:25px;
-}
-/*section3*/
-.kaur>h3{
-    font-size:25px;
-    color:blue;
-    text-decoration: underline;
-
-}
-.kaur>p{
-	font-size:25px;
-}
-/*------ position image----*/
-img{
-    float: right;
-    width:600px;
-    height:650px;
-    margin-right:15px;
 }
